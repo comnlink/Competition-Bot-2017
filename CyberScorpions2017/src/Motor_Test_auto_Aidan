@@ -51,8 +51,8 @@ public:
 		//std::string autoSelected = SmartDashboard::GetString("Auto Selector", autoNameDefault);
 		std::cout << "Auto selected: " << autoSelected << std::endl;
 
-		if(autoSelected == autoNameCustom){
-			Jaguar*exampleJaguar= new Jaguar(0);//sets up code.
+		if(autoSelected == autoNameCustom|| true){
+			Spark*exampleJaguar= new Spark(3);//sets up code.
 			exampleJaguar->EnableDeadbandElimination(true);//Kills all input from controllers/joysticks
 			exampleJaguar->Set(0.7);//This is the spped at which it runs
 			//Custom Auto goes here
